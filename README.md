@@ -3,6 +3,7 @@ Resolver o Desafio proposto pela Zappts
 [REQUISITOS]																			
 
 Seu objetivo nesta tarefa é criar um conjunto de APIs onde os jogadores possam listar as suas cartas.
+
 ● Você deve armazenar as seguintes informações: nome da carta, edição, idioma (inglês, português ou
 japonês), se ela é foil (laminada) ou não, qual o preço da carta (em reais) e quantas cartas com essas
 características você possui.
