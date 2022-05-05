@@ -1,7 +1,7 @@
 package com.magic.servidor;
 
-import com.yourcar.rodizio.carros.Carrosinf;
-import com.yourcar.rodizio.repositorio.Carrorepositorio;
+import com.magic.cartas.Cartasbd;
+import com.magic.repositorio.Cartasrepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-    @RequestMapping("/com/magic/servidor/carros")
+    @RequestMapping("/com/magic/servidor/cartas")
 public class Carroval {
     @Autowired
     //neste momento estamos atribuindo funcoees ao repositorio, se deixarmos sem o autowired o programa retornaria null
-    private Carrorepositorio carrorepositorio;
+    private Cartasrepositorio cartasrepositorio;
 
     @GetMapping
-    public List<Carrosinf> listar() {
-        return carrorepositorio.findAll();
+    public List<Cartasbd> listar() {
+        return cartasrepositorio.findAll();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public  Carrosinf salvar(@RequestBody  Carrosinf carros){ //Request Body converte corpo da requisicao para objeto cliente no caso.
-        return carrorepositorio.save(carros);
+    public  Cartasbd salvar(@RequestBody  Cartasbd carros){ //Request Body converte corpo da requisicao para objeto cliente no caso.
+        return cartasrepositorio.save(carros);
     }
 }

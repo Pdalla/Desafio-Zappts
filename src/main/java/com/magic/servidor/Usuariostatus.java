@@ -1,7 +1,7 @@
 package com.magic.servidor;//package com.yourcar.rodizio.servidor;
 
-import com.yourcar.rodizio.repositorio.Usuariorepositorio;
-import com.yourcar.rodizio.usuario.Usuarioval;
+import com.magic.repositorio.Usuariorepositorio;
+import com.magic.usuarios.Usuariobd;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
                 .orElse(ResponseEntity.notFound().build());
     }
     @PostMapping(path = "/com/magic/servidor/usuario/salvar")
-    public Usuarioval salvar(@RequestBody Usuarioval usuario) {
+    public Usuariobd salvar(@RequestBody Usuariobd usuario) {
         return usuariorepositorio.save(usuario);
     }
 }
