@@ -11,10 +11,13 @@ public class Cartasbd {
 //Valor X
 //Qtde X
     //        @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+
+
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     //@Basic(optional = false)
-    //@Column(name = "qtde",unique = true,nullable = false)
     private String nomecarta;
     @Column(nullable = false, length = 20)
     private String edicao;
@@ -72,9 +75,11 @@ public class Cartasbd {
         return foil;
     }
 
-    public void setFoil(Boolean foil) {
-        this.foil = foil;
+    public void setFoil(Boolean foil) {this.foil = foil;
     }
+    public Integer getId() { return id;    }
+    public void setId(Integer id) {  this.id = id;
 
+    }
 }
 

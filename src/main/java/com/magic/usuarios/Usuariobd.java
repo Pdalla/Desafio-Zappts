@@ -1,14 +1,13 @@
 package com.magic.usuarios;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
+
 
 @Entity (name = "USUARIO") /* entidade mapeada para tabela no banco de dados */
 public class Usuariobd {
     @Id
-    ///@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(nullable = false,unique = true)
     private long cpf;

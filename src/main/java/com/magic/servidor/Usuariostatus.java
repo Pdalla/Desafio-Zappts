@@ -21,9 +21,11 @@ import org.springframework.web.bind.annotation.*;
                 .orElse(ResponseEntity.notFound().build());
     }
     @PostMapping(path = "/com/magic/servidor/usuario/salvar")
-    public Usuariobd salvar(@RequestBody Usuariobd usuario) {
-        return usuariorepositorio.save(usuario);
+    public Usuariobd salvar(@RequestBody Usuariobd usuariobd) {
+        return usuariorepositorio.save(usuariobd);
     }
+
+
 }
 
 
