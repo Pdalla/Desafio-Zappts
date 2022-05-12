@@ -1,10 +1,11 @@
-package com.magic.usuarios;
+package com.magic.Inicio.usuarios;
 
 import javax.persistence.*;
 import java.util.Date;
 
 
-@Entity (name = "USUARIO") /* entidade mapeada para tabela no banco de dados */
+@Entity  /* entidade mapeada para tabela no banco de dados */
+@Table(name = "USUARIO")
 public class Usuariobd {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

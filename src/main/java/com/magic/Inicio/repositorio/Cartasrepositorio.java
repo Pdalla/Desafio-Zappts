@@ -1,6 +1,6 @@
-package com.magic.repositorio;
+package com.magic.Inicio.repositorio;
 
-import com.magic.cartas.Cartasbd;
+import com.magic.Inicio.cartas.Cartasbd;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

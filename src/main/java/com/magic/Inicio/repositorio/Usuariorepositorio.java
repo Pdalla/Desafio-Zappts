@@ -1,6 +1,6 @@
-package com.magic.repositorio;
+package com.magic.Inicio.repositorio;
 
-import com.magic.usuarios.Usuariobd;
+import com.magic.Inicio.usuarios.Usuariobd;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

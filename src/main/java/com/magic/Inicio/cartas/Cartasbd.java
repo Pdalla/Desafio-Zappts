@@ -1,8 +1,9 @@
-package com.magic.cartas;
+package com.magic.Inicio.cartas;
 
 import javax.persistence.*;
 
-@Entity (name = "CARTAS")
+@Entity
+@Table(name = "CARTAS")
 public class Cartasbd {
     //Nome X
 //Edicao X
